@@ -31,13 +31,13 @@ return {
       end,
       desc = "Telescope Git Files",
     },
-    {
-      "<leader>e",
-      function()
-        require("telescope.builtin").buffers()
-      end,
-      desc = "Telescope buffers",
-    },
+--    {
+--      "<leader>e",
+--      function()
+--        require("telescope.builtin").buffers()
+--      end,
+--      desc = "Telescope buffers",
+--    },
     {
       "<leader>gs",
       function()
@@ -93,7 +93,7 @@ return {
       desc = "Telescope Help"
     },
     {
-      "<leader>bb",
+      "<leader>e",
       function()
         require("telescope").extensions.file_browser.file_browser({ path = "%:h:p", select_buffer = true })
       end,

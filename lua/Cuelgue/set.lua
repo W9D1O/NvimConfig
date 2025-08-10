@@ -1,10 +1,22 @@
+if  vim.g.neovide then
+
+vim.opt.guifont= "JetBrainsMono NFM:h13"
+vim.g.neovide_cursor_smooth_blink = true
+
+end
 vim.opt.guicursor = ""
 
 vim.g.netrw_banner = 0
 
-vim.opt.nu = true
-vim.opt.relativenumber = true
 
+vim.opt.cursorline= true
+
+vim.opt.nu = true
+
+vim.opt.relativenumber = true
+vim.keymap.set("n", "<leader>co", "<cmd>copen 20<CR>", { desc = "Open Quickfix List" })
+vim.keymap.set("n", "<leader>cc", "<cmd>cclose<CR>", { desc = "Close Quickfix List" })
+vim.keymap.set("n", "<leader>m", "<cmd>make<CR><CR>", { desc = "Make(Tiene que estar seteado antes con makeprg)" })
 vim.opt.tabstop = 2
 vim.opt.softtabstop = 2
 vim.opt.shiftwidth = 2
