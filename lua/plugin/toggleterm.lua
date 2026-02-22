@@ -6,6 +6,7 @@ return {
    version = "*", 
    opts = {
    direction = "float",
+   --open_mapping = [["n",<leader>t]],
    open_mapping = [[<c-\>]],
      },
     config = true,
